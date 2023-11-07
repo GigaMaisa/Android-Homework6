@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="@color/black"
+        android:id="@+id/tvOperationStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/operation_status" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etFirstName"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/person_face"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:textColor="@color/black"
+        android:hint="@string/type_first_name"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLastName"
+        android:textSize="16sp"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/person_face"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:textColor="@color/black"
+        android:hint="@string/type_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="16sp"
+        android:textColorHint="@color/black"
+        android:layout_marginVertical="20dp"
+        android:textColor="@color/black"
+        android:hint="@string/type_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etAge"
+        android:inputType="numberSigned"
+        android:drawableStart="@drawable/numbers"
+        android:drawablePadding="9dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:hint="@string/type_age"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/total_active_users" />
+
+        <TextView
+            android:id="@+id/tvTotalUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/number" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/total_deleted_users" />
+
+        <TextView
+            android:id="@+id/tvDeletedUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/number" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:textSize="13sp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:text="@string/add_user"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRemoveUser"
+            android:background="@drawable/custom_button"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="@string/remove_user"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdateUser"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:text="@string/update_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

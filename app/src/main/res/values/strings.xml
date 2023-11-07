@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HomeworkSix</string>
+    <string name="type_first_name">Type First Name</string>
+    <string name="type_last_name">Type Last Name</string>
+    <string name="type_email">Type E-mail</string>
+    <string name="operation_status">Operation Status</string>
+    <string name="total_active_users">Total Active users:</string>
+    <string name="number">0</string>
+    <string name="total_deleted_users">Total Deleted users:</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="update_user">Update User</string>
+    <string name="type_age">Type Age</string>
+    <string name="go_home">Go Home</string>
+</resources>
